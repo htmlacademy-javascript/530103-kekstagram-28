@@ -1,5 +1,5 @@
-const checkStringLenght = (string, number) => string.lenght <= number;
-checkStringLenght ('Здесь был Кекс', 20);
+const checkStringLength = (string, number) => string.length <= number;
+checkStringLength ('Здесь был Кекс', 20);
 const checkStringIsPalindrome = (string) => {
   const tempString = string
     .toLowerCase()
@@ -22,10 +22,12 @@ const extractNumber = (string) => {
   return parseInt (result, 10);
 };
 extractNumber('2023 год');
-const myPadStart = (string, minLenght, pad) => {
-  const actualPad = minLenght - string.lenght;
+const myPadStart = (string, minLength, pad) => {
+  const actualPad = minLength - string.length;
   return actualPad <= 0
     ? string
     : pad.slice(0, actualPad % pad.length) + pad.repeat(actualPad / pad.length) + string;
 };
 myPadStart('1', 2, '0');
+myPadStart('qwerty', 4, '0');
+myPadStart('q', 4, 'we');
