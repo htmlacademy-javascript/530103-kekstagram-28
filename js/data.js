@@ -57,9 +57,9 @@ const createPhoto = (index) => ({
   ),
 });
 
-const getPhoto = () =>
+const getPhotos = () =>
   Array.from({length:PHOTOS_COUNT}, (_,index) =>
     createPhoto(index + 1));
 
-getPhoto ();
+getPhotos ();
 
