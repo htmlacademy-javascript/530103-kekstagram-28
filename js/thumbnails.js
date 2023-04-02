@@ -7,7 +7,6 @@ const createThumbnail = ({url, description, comments, likes}) => {
   picElement.querySelector('.picture__img').alt = description;
   picElement.querySelector('.picture__comments').textContent = comments.length;
   picElement.querySelector('.picture__likes').textContent = likes;
-
   return picElement;
 };
 
