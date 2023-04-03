@@ -1,5 +1,8 @@
 
-import './util.js';
+
 import './data.js';
 
-//перешел на ветку 5
+import {getPhotos} from './data.js';
+import {renderThumbnail} from './thumbnails.js';
+renderThumbnail(getPhotos());
+
