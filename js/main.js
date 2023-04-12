@@ -1,3 +1,3 @@
 import {getPhotos} from './data.js';
-import { renderThumbnail } from './thumbnails.js';
-renderThumbnail(getPhotos());
+import {renderPictures} from './modalwindow.js';
+renderPictures(getPhotos());
