@@ -1,5 +1,5 @@
 import {openBigPicture} from './big-picture.js';
-import {renderThumbnail, container} from './thumbnail.js';
+import {renderThumbnail, container} from './thumbnails.js';
 
 let pictures = [];
 
